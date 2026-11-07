@@ -1,0 +1,70 @@
+{
+  "best_model": "Linear Regression",
+  "features": [
+    "attendance",
+    "assignment_marks",
+    "quiz_scores"
+  ],
+  "target": "final_exam_score",
+  "n_train": 640,
+  "n_test": 160,
+  "test_mae": 5.039,
+  "test_rmse": 6.448,
+  "test_r2": 0.7349,
+  "baseline_test_mae": 10.182,
+  "results": [
+    {
+      "model": "Baseline (predict mean)",
+      "cv_mae": 9.29,
+      "test_mae": 10.182,
+      "test_rmse": 12.537,
+      "test_r2": -0.002
+    },
+    {
+      "model": "Linear Regression",
+      "cv_mae": 4.675,
+      "test_mae": 5.039,
+      "test_rmse": 6.448,
+      "test_r2": 0.7349
+    },
+    {
+      "model": "Ridge Regression",
+      "cv_mae": 4.675,
+      "test_mae": 5.038,
+      "test_rmse": 6.449,
+      "test_r2": 0.7349
+    },
+    {
+      "model": "Random Forest",
+      "cv_mae": 5.019,
+      "test_mae": 5.231,
+      "test_rmse": 6.616,
+      "test_r2": 0.721
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_mae": 4.782,
+      "test_mae": 5.11,
+      "test_rmse": 6.496,
+      "test_r2": 0.731
+    }
+  ],
+  "ranges": {
+    "attendance": [
+      42.2,
+      100.0
+    ],
+    "assignment_marks": [
+      23.7,
+      100.0
+    ],
+    "quiz_scores": [
+      23.8,
+      100.0
+    ]
+  },
+  "target_range": [
+    32.8,
+    100.0
+  ]
+}
